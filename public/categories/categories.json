@@ -1,0 +1,784 @@
+ [
+      {
+         "CONSULTING":[
+           {
+             "Interior Design": [
+                {
+                    "Commercial design" : [
+                        {
+                        "name": "Pop ups & temporary"
+                        },
+                        {
+                        "name": "Offices"
+                        },
+                        {
+                        "name": "Retail"
+                        },
+                        {
+                        "name": "Mixed use"
+                        }
+                    ]
+                    },
+                    {
+                    "Hospitality design" : [
+                        {
+                        "name": "Food & beverage"
+                        },
+                        {
+                        "name": "Hotels & resorts"
+                        },
+                        {
+                        "name": "Healthcare & wellness"
+                        },
+                        {
+                        "name": "Bars & nightclubs"
+                        }
+                    ]
+                    },
+                    {
+                    "Residential design" : [
+                        {
+                        "name": "Private houses"
+                        },
+                        {
+                        "name": "Apartments"
+                        },
+                        {
+                        "name": "Multi unit housing"
+                        }
+                    ]
+                    },
+                    {
+                    "Cultural design" : [
+                        {
+                        "name": "Gallery & exhibition spaces"
+                        },
+                        {
+                        "name": "Hall & theater"
+                        },
+                        {
+                        "name": "Museums"
+                        },
+                        {
+                        "name": "Pavilions"
+                        },
+                        {
+                        "name":"Religious buildings & memorials"
+                        }
+                    ]
+                    },
+                    {
+                    "Institutional design" : [
+                        {
+                        "name": "Government & civic"
+                        },
+                        {
+                        "name": "Higher education & research facilities"
+                        },
+                        {
+                        "name": "Kindergartens & schools"
+                        },
+                        {
+                        "name": "Libraries"
+                        }
+                    ]
+                    },
+                    {
+                    "Sports & recreation" : [
+                        {
+                        "name": "Gyms & recreation centers"
+                        },
+                        {
+                        "name": "Stadium / arenas"
+                        }
+                    ]
+                    },
+                    {
+                    "Healthcare design" : [
+                        {
+                        "name": "Healthcare centers"
+                        },
+                        {
+                        "name": "Hospitals & clinics"
+                        },
+                        {
+                        "name": "Medical facilities"
+                        },
+                        {
+                        "name": "Rehabilitation centers"
+                        },
+                        {
+                        "name":"Retirement"
+                        },
+                        {
+                        "name":"Laboratories"
+                        }
+                    ]
+                    },
+                    {
+                    "name": "Furniture design"
+                    },
+                    {
+                    "name": "Product design"
+                    },
+                    {
+                    "name": "Lighting design"
+                    }
+             ]
+         },
+         {
+         	"Architecture":[
+         		{
+                    "Commercial architecture" : [
+                        {
+                        "name": "Pop ups & temporary"
+                        },
+                        {
+                        "name": "Offices"
+                        },
+                        {
+                        "name": "Retail"
+                        },
+                        {
+                        "name": "Mixed use"
+                        }
+                    ]
+                    },
+                    {
+                    "Hospitality architecture" : [
+                        {
+                        "name": "Food & beverage"
+                        },
+                        {
+                        "name": "Hotels & resorts"
+                        },
+                        {
+                        "name": "Healthcare & wellness"
+                        },
+                        {
+                        "name": "Bars & nightclubs"
+                        }
+                    ]
+                    },
+                    {
+                    "Residential architecture" : [
+                        {
+                        "name": "Private houses"
+                        },
+                        {
+                        "name": "Apartments"
+                        },
+                        {
+                        "name": "Multi unit housing"
+                        }
+                    ]
+                    },
+                    {
+                    "Cultural architecture" : [
+                        {
+                        "name": "Gallery & exhibition spaces"
+                        },
+                        {
+                        "name": "Hall & theater"
+                        },
+                        {
+                        "name": "Museums"
+                        },
+                        {
+                        "name": "Pavilions"
+                        },
+                        {
+                        "name":"Religious buildings & memorials"
+                        }
+                    ]
+                    },
+                    {
+                    "Institutional architecture" : [
+                        {
+                        "name": "Government & civic"
+                        },
+                        {
+                        "name": "Higher education & research facilities"
+                        },
+                        {
+                        "name": "Kindergartens & schools"
+                        },
+                        {
+                        "name": "Libraries"
+                        }
+                    ]
+                    },
+                    {
+                    "Recreational architecture" : [
+                        {
+                        "name": "Gyms & recreation centers"
+                        },
+                        {
+                        "name": "Stadium / arenas"
+                        }
+                    ]
+                    },
+                    {
+                    "Industrial & infrastructure" : [
+                        {
+                        "name": "Transportation"
+                        },
+                        {
+                        "name": "Bridges"
+                        },
+                        {
+                        "name": "Factories & warehouses"
+                        },
+                        {
+                        "name": "Energy plants"
+                        },
+                        {
+                        "name": "Greenhouses"
+                        }
+                    ]
+                    },
+                    {
+                    "Healthcare architecture" : [
+                        {
+                        "name": "Healthcare centers"
+                        },
+                        {
+                        "name": "Hospitals & clinics"
+                        },
+                        {
+                        "name": "Medical facilities"
+                        },
+                        {
+                        "name": "Rehabilitation centers"
+                        },
+                        {
+                        "name": "Retirement"
+                        },
+                        {
+                        "name": "Laboratories"
+                        }
+                    ]
+                    }
+
+         	]
+         },
+         {
+         	"Landscape & Planning":[
+         		{
+                 "name": "Urban design"
+                },
+                {
+                 "name": "Urban planning"
+                },
+                {
+                 "name": "Landscape architecture"
+                },
+                {
+                 "name": "Installations & structures"
+                },
+                {
+                 "name": "Cultural landscape"
+                },
+                {
+                 "name": "Educational landscape"
+                },
+                {
+                 "name": "Gardens"
+                },
+                {
+                 "name": "Public landscape"
+                },
+                {
+                 "name": "Residential landscape"
+                },
+                {
+                 "name": "Outdoor designs"
+                }   
+         	]
+         },
+         {
+         	"MEP Solutions": [
+         		{
+                 "name":"HVAC engineering"  
+                },
+                {
+                 "name":"Electrical engineering"  
+                },
+                {
+                 "name":"Plumbing services"  
+                },
+                {
+                 "name":"Building information modeling (BIM / Revit)"  
+                },
+                    {
+                    "Other services" : [
+                        {
+                        "name": "LPG System design"
+                        },
+                        {
+                        "name": "Infrastructure design"
+                        },
+                        {
+                        "name": "Security"
+                        },
+                        {
+                        "name": "Energy modeling"
+                        },
+                        {
+                        "name": "Sustainable design analysis"
+                        },
+                        {
+                        "name": "DM Green building & Estidama compliant design"
+                        },
+                        {
+                        "name": "Life cycle cost analysis"
+                        },
+                        {
+                        "name": "Building automation & controls design"
+                        },
+                        {
+                        "name": "Value engineering"
+                        },
+                        {
+                        "name": "Lighting consulting"
+                        },
+                        {
+                        "name": "Program management"
+                        },
+                        {
+                        "name": "Commissioning"
+                        },
+                        {
+                        "name": "Building retrofit design"
+                        },
+                        {
+                        "name": "Facilities management design"
+                        },
+                        {
+                        "name": "Preliminary project budgeting"
+                        },
+                        {
+                        "name": "Quantity surveying"
+                        },
+                        {
+                        "name": "Troubleshooting existing systems"
+                        }
+                    ]
+                    }
+         	]
+         }
+     ]
+     },
+     {
+        "CONSTRUCTION":[
+        			{
+        			"name": "Stone cladding"
+        			},
+        			{
+        			"name": "Glass fibre reinforced concrete (GRC)"
+        			},
+        			{
+        			"name": "Glass reinforced gypsum (GRG)"
+        			},
+        			{
+        			"Design & Build": [
+	        			{
+	        			"name": "Construction management"
+	        			},
+	        			{
+	        			"name": "Post design / supervision services"
+	        			}		
+        				]
+        			},
+        			{
+             "Interior Design": [
+                {
+                    "Commercial design" : [
+                        {
+                        "name": "Pop ups & temporary"
+                        },
+                        {
+                        "name": "Offices"
+                        },
+                        {
+                        "name": "Retail"
+                        },
+                        {
+                        "name": "Mixed use"
+                        }
+                    ]
+                    },
+                    {
+                    "Hospitality design" : [
+                        {
+                        "name": "Food & beverage"
+                        },
+                        {
+                        "name": "Hotels & resorts"
+                        },
+                        {
+                        "name": "Healthcare & wellness"
+                        },
+                        {
+                        "name": "Bars & nightclubs"
+                        }
+                    ]
+                    },
+                    {
+                    "Residential design" : [
+                        {
+                        "name": "Private houses"
+                        },
+                        {
+                        "name": "Apartments"
+                        },
+                        {
+                        "name": "Multi unit housing"
+                        }
+                    ]
+                    },
+                    {
+                    "Cultural design" : [
+                        {
+                        "name": "Gallery & exhibition spaces"
+                        },
+                        {
+                        "name": "Hall & theater"
+                        },
+                        {
+                        "name": "Museums"
+                        },
+                        {
+                        "name": "Pavilions"
+                        },
+                        {
+                        "name":"Religious buildings & memorials"
+                        }
+                    ]
+                    },
+                    {
+                    "Institutional design" : [
+                        {
+                        "name": "Government & civic"
+                        },
+                        {
+                        "name": "Higher education & research facilities"
+                        },
+                        {
+                        "name": "Kindergartens & schools"
+                        },
+                        {
+                        "name": "Libraries"
+                        }
+                    ]
+                    },
+                    {
+                    "Sports & recreation" : [
+                        {
+                        "name": "Gyms & recreation centers"
+                        },
+                        {
+                        "name": "Stadium / arenas"
+                        }
+                    ]
+                    },
+                    {
+                    "Healthcare design" : [
+                        {
+                        "name": "Healthcare centers"
+                        },
+                        {
+                        "name": "Hospitals & clinics"
+                        },
+                        {
+                        "name": "Medical facilities"
+                        },
+                        {
+                        "name": "Rehabilitation centers"
+                        },
+                        {
+                        "name":"Retirement"
+                        },
+                        {
+                        "name":"Laboratories"
+                        }
+                    ]
+                    },
+                    {
+                    "name": "Furniture design"
+                    },
+                    {
+                    "name": "Product design"
+                    },
+                    {
+                    "name": "Lighting design"
+                    }
+             ]
+         },
+         {
+         	"Architecture":[
+         		{
+                    "Commercial architecture" : [
+                        {
+                        "name": "Pop ups & temporary"
+                        },
+                        {
+                        "name": "Offices"
+                        },
+                        {
+                        "name": "Retail"
+                        },
+                        {
+                        "name": "Mixed use"
+                        }
+                    ]
+                    },
+                    {
+                    "Hospitality architecture" : [
+                        {
+                        "name": "Food & beverage"
+                        },
+                        {
+                        "name": "Hotels & resorts"
+                        },
+                        {
+                        "name": "Healthcare & wellness"
+                        },
+                        {
+                        "name": "Bars & nightclubs"
+                        }
+                    ]
+                    },
+                    {
+                    "Residential architecture" : [
+                        {
+                        "name": "Private houses"
+                        },
+                        {
+                        "name": "Apartments"
+                        },
+                        {
+                        "name": "Multi unit housing"
+                        }
+                    ]
+                    },
+                    {
+                    "Cultural architecture" : [
+                        {
+                        "name": "Gallery & exhibition spaces"
+                        },
+                        {
+                        "name": "Hall & theater"
+                        },
+                        {
+                        "name": "Museums"
+                        },
+                        {
+                        "name": "Pavilions"
+                        },
+                        {
+                        "name":"Religious buildings & memorials"
+                        }
+                    ]
+                    },
+                    {
+                    "Institutional architecture" : [
+                        {
+                        "name": "Government & civic"
+                        },
+                        {
+                        "name": "Higher education & research facilities"
+                        },
+                        {
+                        "name": "Kindergartens & schools"
+                        },
+                        {
+                        "name": "Libraries"
+                        }
+                    ]
+                    },
+                    {
+                    "Recreational architecture" : [
+                        {
+                        "name": "Gyms & recreation centers"
+                        },
+                        {
+                        "name": "Stadium / arenas"
+                        }
+                    ]
+                    },
+                    {
+                    "Industrial & infrastructure" : [
+                        {
+                        "name": "Transportation"
+                        },
+                        {
+                        "name": "Bridges"
+                        },
+                        {
+                        "name": "Factories & warehouses"
+                        },
+                        {
+                        "name": "Energy plants"
+                        },
+                        {
+                        "name": "Greenhouses"
+                        }
+                    ]
+                    },
+                    {
+                    "Healthcare architecture" : [
+                        {
+                        "name": "Healthcare centers"
+                        },
+                        {
+                        "name": "Hospitals & clinics"
+                        },
+                        {
+                        "name": "Medical facilities"
+                        },
+                        {
+                        "name": "Rehabilitation centers"
+                        },
+                        {
+                        "name": "Retirement"
+                        },
+                        {
+                        "name": "Laboratories"
+                        }
+                    ]
+                    }
+
+         	]
+         },
+         {
+         	"Landscape & Planning":[
+         		{
+                 "name": "Urban design"
+                },
+                {
+                 "name": "Urban planning"
+                },
+                {
+                 "name": "Landscape architecture"
+                },
+                {
+                 "name": "Installations & structures"
+                },
+                {
+                 "name": "Cultural landscape"
+                },
+                {
+                 "name": "Educational landscape"
+                },
+                {
+                 "name": "Gardens"
+                },
+                {
+                 "name": "Public landscape"
+                },
+                {
+                 "name": "Residential landscape"
+                },
+                {
+                 "name": "Outdoor designs"
+                }   
+         	]
+         },
+         {
+         	"MEP Solutions": [
+         		{
+                 "name":"HVAC engineering"  
+                },
+                {
+                 "name":"Electrical engineering"  
+                },
+                {
+                 "name":"Plumbing services"  
+                },
+                {
+                 "name":"Building information modeling (BIM / Revit)"  
+                },
+                    {
+                    "Other services" : [
+                        {
+                        "name": "LPG System design"
+                        },
+                        {
+                        "name": "Infrastructure design"
+                        },
+                        {
+                        "name": "Security"
+                        },
+                        {
+                        "name": "Energy modeling"
+                        },
+                        {
+                        "name": "Sustainable design analysis"
+                        },
+                        {
+                        "name": "DM Green building & Estidama compliant design"
+                        },
+                        {
+                        "name": "Life cycle cost analysis"
+                        },
+                        {
+                        "name": "Building automation & controls design"
+                        },
+                        {
+                        "name": "Value engineering"
+                        },
+                        {
+                        "name": "Lighting consulting"
+                        },
+                        {
+                        "name": "Program management"
+                        },
+                        {
+                        "name": "Commissioning"
+                        },
+                        {
+                        "name": "Building retrofit design"
+                        },
+                        {
+                        "name": "Facilities management design"
+                        },
+                        {
+                        "name": "Preliminary project budgeting"
+                        },
+                        {
+                        "name": "Quantity surveying"
+                        },
+                        {
+                        "name": "Troubleshooting existing systems"
+                        }
+                    ]
+                    }
+         	]
+         }
+        ]
+     },
+     {
+        "QUICK CONSULTATION":[
+        	{
+        			"name": "Living Room"
+        			},
+        			{
+        			"name": "Dining Room"
+        			},
+        			{
+        			"name": "Kitchen"
+        			},
+        			{
+        			"name": "Bedroom"
+        			},
+        			{
+        			"name": "Bathroom"
+        			},
+        			{
+        			"name": "Office"
+        			}
+        ]
+     }
+
+ ]
