@@ -1,46 +1,52 @@
 @extends('admin.dashboard')
-
 @section('content')
-<div class="col-lg-12">
-    <div class="card">
-        <div class="card-header">
-            <h4>Users info</h4>
-        </div>
-        <div class="card-body">
-            <div class="table-responsive">
-                <table class="table">
-                    <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Username</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                    </tbody>
-                </table>
+    <div class="container px-5 mt-4">
+        <div class="card">
+            <div class="card-header d-flex">
+                <h3 class="text-xl text-gray font-weight-bold">Users Info</h3>
+            </div>
+            <div class="card-body">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Username</th>
+                                <th>Email</th>
+                                <th>Verified</th>
+                                <th class="text-right">Actions</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach($users as $key => $user)
+                                <tr style="vertical-align: center">
+                                    <td>{{$user->id}}</td>
+                                    <td>{{$user->username}}</td>
+                                    <td>{{$user->email}}</td>
+                                    <td>
+                                        @if($user->verified)
+                                            Yes
+                                        @else
+                                            No
+                                        @endif
+                                    </td>
+                                    <td class="d-flex justify-content-end">
+                                        <a href="{{route('users.edit',$user->id)}}"> <button class="btn btn-primary rounded mr-1" style="width: 4.5rem" >Edit</button> </a>
+                                        <form>
+                                            <button class="btn btn-danger rounded"style="width: 4.5rem" >Delete</button>
+                                        </form>
+                                    </td>
+                            </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
-</div>
 
-    @endsection
+
+@endsection

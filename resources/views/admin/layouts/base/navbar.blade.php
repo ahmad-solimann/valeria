@@ -4,10 +4,10 @@
         <div class="container-fluid">
             <div class="navbar-holder d-flex align-items-center justify-content-between">
                 <div class="navbar-header"><a id="toggle-btn" href="#" class="menu-btn"><i class="icon-bars"> </i></a><a href="/index.html" class="navbar-brand">
-                        <div class="brand-text d-none d-md-inline-block"><span>Bootstrap </span><strong class="text-primary">Dashboard</strong></div></a></div>
+                        <div class="brand-text d-none d-md-inline-block"><span>Sihr </span><strong class="text-primary"> Al-Sharq</strong></div></a></div>
                 <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
                     <!-- Notifications dropdown-->
-                    <li class="nav-item dropdown"> <a id="notifications" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link"><i class="fa fa-bell"></i><span class="badge badge-warning">12</span></a>
+                    <li class="nav-item dropdown"> <a id="notifications" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link"><i class="fa fa-bell"></i><span class="badge badge-warning" id="notifications-count">{{auth()->user()->notificationsCount()}}</span></a>
                         <ul aria-labelledby="notifications" class="dropdown-menu">
                             <li><a rel="nofollow" href="#" class="dropdown-item">
                                     <div class="notification d-flex justify-content-between">
@@ -51,13 +51,6 @@
                                         <h3 class="h5">Ashley Wood</h3><span>sent you a direct message</span><small>3 days ago at 7:58 pm - 10.06.2014</small>
                                     </div></a></li>
                             <li><a rel="nofollow" href="#" class="dropdown-item all-notifications text-center"> <strong> <i class="fa fa-envelope"></i>Read all messages    </strong></a></li>
-                        </ul>
-                    </li>
-                    <!-- Languages dropdown    -->
-                    <li class="nav-item dropdown"><a id="languages" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link language dropdown-toggle"><img src="/dashboard/img/flags/16/GB.png" alt="English"><span class="d-none d-sm-inline-block">English</span></a>
-                        <ul aria-labelledby="languages" class="dropdown-menu">
-                            <li><a rel="nofollow" href="#" class="dropdown-item"> <img src="/dashboard/img/flags/16/DE.png" alt="English" class="mr-2"><span>German</span></a></li>
-                            <li><a rel="nofollow" href="#" class="dropdown-item"> <img src="/dashboard/img/flags/16/FR.png" alt="English" class="mr-2"><span>French                                                         </span></a></li>
                         </ul>
                     </li>
                     <!-- Log out-->

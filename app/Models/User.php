@@ -21,9 +21,8 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name',
-        'email',
-        'password',
+        'username','email','password','user_role','verified','first_name','last_name',
+        'address_1','address_2','emirates_national_id','phone','city'
     ];
 
     /**
@@ -44,4 +43,8 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function notificationsCount(){
+       return $this->notifications()->count();
+    }
 }

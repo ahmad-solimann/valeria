@@ -3,10 +3,21 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Repositories\UserRepository;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
+    /**
+     * @var UserRepository
+     */
+    private $userRepository;
+
+    public function __construct(UserRepository $userRepository)
+    {
+        $this->userRepository = $userRepository;
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -36,7 +47,8 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->userRepository->add($request);
+        return redirect(route('users.index'));
     }
 
     /**
@@ -47,7 +59,7 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        //
+        dd('hhhhhhhhh');
     }
 
     /**
@@ -58,7 +70,8 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        $user = User::find($id);
+        return view('admin.users.edit',compact('user'));
     }
 
     /**
@@ -70,7 +83,10 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $user = User::find($id);
+        $this->userRepository->update($request,$user);
+
+        return redirect(route('users.index'));
     }
 
     /**
@@ -81,6 +97,9 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        dd($id);
+        $user = User::find($id);
+        $this->userRepository->delete($user);
+        return redirect(route('users.index'));
     }
 }

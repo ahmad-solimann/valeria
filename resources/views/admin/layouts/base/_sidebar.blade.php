@@ -4,8 +4,8 @@
         <!-- Sidebar Header    -->
         <div class="sidenav-header d-flex align-items-center justify-content-center">
             <!-- User Info-->
-            <div class="sidenav-header-inner text-center"><img src="/dashboard/img/avatar-7.jpg" alt="person" class="img-fluid rounded-circle">
-                <h2 class="h5">{{auth()->user()->name}}</h2><span>System Admin</span>
+            <div class="sidenav-header-inner text-center">
+                <h2 class="h5">{{auth()->user()->username}}</h2><span>System Admin</span>
             </div>
             <!-- Small Brand information, appears on minimized sidebar-->
             <div class="sidenav-header-logo"><a href="/index.html" class="brand-small text-center"> <strong>B</strong><strong class="text-primary">D</strong></a></div>
@@ -20,8 +20,19 @@
                         <li><a href="{{route('users.index')}}">Show Users</a></li>
                     </ul>
                 </li>
+                <li><a href="#questionnairesdropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-padnote"></i>Questionnaires </a>
+                    <ul id="questionnairesdropdownDropdown" class="collapse list-unstyled ">
+                        <li><a href="#">Show Questionnaires</a></li>
+                    </ul>
+                </li>
                 <li><a href="#projectsdropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-website"></i>Projects </a>
                     <ul id="projectsdropdownDropdown" class="collapse list-unstyled ">
+                        <li><a href="#">Create Project</a></li>
+                        <li><a href="#">Show Projects</a></li>
+                    </ul>
+                </li>
+                <li><a href="#settingsdropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-bars"></i>Settings </a>
+                    <ul id="settingsdropdownDropdown" class="collapse list-unstyled ">
                         <li><a href="#">Create Project</a></li>
                         <li><a href="#">Show Projects</a></li>
                     </ul>

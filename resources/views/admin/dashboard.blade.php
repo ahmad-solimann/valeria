@@ -11,8 +11,7 @@
     @yield('content')
 
 </div>
-
-
 @include('admin.layouts.partials._scripts')
+
 </body>
 </html>
