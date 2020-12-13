@@ -17,10 +17,10 @@ class CreateQuestionnairesTable extends Migration
             $table->id();
             $table->unsignedBigInteger('category_id');
             $table->unsignedBigInteger('style_id');
+            $table->foreignId('user_id');
             $table->string('project_name');
             $table->text('project_description');
             $table->string('project_address');
-            $table->text('files')->nullable();
             $table->text('links')->nullable();
             $table->string('budget_range')->nullable();
             $table->timestamps();

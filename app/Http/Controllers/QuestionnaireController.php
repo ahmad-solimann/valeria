@@ -41,12 +41,12 @@ class QuestionnaireController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Questionnaire  $questionnaire
+     * @param Questionnaire $questionnaire
      * @return \Illuminate\Http\Response
      */
-    public function show()
+    public function show(Questionnaire $questionnaire)
     {
-        return view('admin.questionnaires.show2');
+        return view('admin.questionnaires.show2',compact('questionnaire'));
     }
 
     /**

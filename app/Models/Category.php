@@ -18,4 +18,6 @@ class Category extends Model
         'name',
         'parent_id'
     ];
+
+
 }

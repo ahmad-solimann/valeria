@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\CategoryDetails;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -27,6 +28,7 @@ class CategorySeeder extends Seeder
     public function insertCategory ($categoryName,$parentId){
         $id = DB::table('categories')->insertGetId([
                 'name' => $categoryName,
+                'category_details_id' => $this->getCategoryDetailsId(strtolower($categoryName)),
                 'parent_id' => $parentId,
             ]);
         return $id;
@@ -45,6 +47,14 @@ class CategorySeeder extends Seeder
                     $parentId =$this->insertCategory($value,$parentId);
                 }
             }
+        }
+
+        public function getCategoryDetailsId ($categoryName){
+           $categoryDetails= CategoryDetails::where('name',$categoryName)->get()->first();
+           if (isset($categoryDetails))
+           return $categoryDetails->id;
+
+           return null;
         }
 
 }

@@ -3,22 +3,37 @@
     <div class="container px-5 mt-4 py-5">
         <div class="card">
             <div class="card-header d-flex">
-                <h2 class="display-4 text-gray font-weight-bold">Questionnaire by John Doe</h2>
+                <h2 class="display-4 text-gray font-weight-bold">Questionnaire by {{$questionnaire->user->username}}</h2>
             </div>
             <div class="card-body">
                 <dl class="row">
                     <dt class="col-sm-3">Project Name</dt>
-                    <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+                    <dd class="col-sm-9">{{$questionnaire->project_name}}</dd>
+                    <dt class="col-sm-3 mt-2">Category</dt>
+                    <dd class="col-sm-9" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item text-primary">Consulting</li>
+                            <li class="breadcrumb-item text-primary">Interior Design</li>
+                            <li class="breadcrumb-item text-primary">Commercial Design</li>
+                            <li class="breadcrumb-item active" aria-current="page">Offices</li>
+                        </ol>
+                    </dd>
+
+                    <dt class="col-sm-3">Style</dt>
+                    <dd class="col-sm-9">{{$questionnaire->style->name}}</dd>
+
+
+
 
                     <dt class="col-sm-3">Description</dt>
                     <dd class="col-sm-9">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos illo nobis saepe? Alias aliquam consequatur cumque delectus doloribus ea eaque esse illo maxime minima natus non numquam, omnis quaerat quisquam quo rerum soluta ullam vero voluptates? Consequatur debitis dolores dolorum eum ex fuga fugiat in inventore ipsam magnam maiores nisi perferendis quod quos ratione sint, velit? Aliquid asperiores at aut cumque dolor, ducimus enim eum exercitationem illum incidunt ipsa itaque labore nostrum perspiciatis provident quo rerum soluta veniam! Ad dolorem ducimus expedita numquam omnis quas sapiente, sint voluptates! Eum iste neque qui! Ad doloremque labore nesciunt quo tempora vitae!</p>
+                        <p>{{$questionnaire->project_description}}</p>
                     </dd>
 
                     <dt class="col-sm-3">Budget</dt>
-                    <dd class="col-sm-9">1000-1500$</dd>
+                    <dd class="col-sm-9">{{$questionnaire->budget_range}}</dd>
 
-                    <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+                    <dt class="col-sm-3 text-truncate">Truncated term</dt>
                     <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
 
                     <dt class="col-sm-3">Nesting</dt>
@@ -29,7 +44,6 @@
                         </dl>
                     </dd>
                 </dl>
-
 
 
             </div>
