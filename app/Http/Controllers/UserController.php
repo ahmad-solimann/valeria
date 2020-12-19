@@ -25,7 +25,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users = User::all()->where('user_role',User::USER_ROLE);
+        $users = User::where('user_role',User::USER_ROLE)->paginate(10);
         return view('admin.users.index',compact('users'));
     }
 
@@ -97,7 +97,6 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        dd($id);
         $user = User::find($id);
         $this->userRepository->delete($user);
         return redirect(route('users.index'));

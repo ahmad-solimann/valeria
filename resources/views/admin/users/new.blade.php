@@ -10,15 +10,15 @@
                       @csrf
                       <div class="form-group">
                           <label>Username</label>
-                          <input type="text" placeholder="Username" class="form-control" name="username">
+                          <input type="text" placeholder="Username" class="form-control" name="username" required>
                       </div>
                       <div class="form-group mt-2">
                           <label>Password</label>
-                          <input type="password" placeholder="Password" class="form-control " name="password">
+                          <input type="password" placeholder="Password" class="form-control " name="password" required>
                       </div>
                       <div class="form-group mt-2">
                           <label>Email</label>
-                          <input type="email" placeholder="Email Address" class="form-control" name="email">
+                          <input type="email" placeholder="Email Address" class="form-control" name="email" required>
                       </div>
                       <div class="checkbox mt-2">
                           <label><input type="checkbox" value="1" name="verified"> Verified</label>

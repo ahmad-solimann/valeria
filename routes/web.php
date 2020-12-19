@@ -17,9 +17,19 @@ use PhpParser\Node\Expr\Array_;
 |
 */
 
+Route::get('/hello',function (){
+    $category= \App\Models\Category::find(9);
+    dd($category->getParentTree());
+});
+
+
 Route::get('/admin', [App\Http\Controllers\AdminController::class,'index'])->name('admin_dashboard');
-Route::resource('users', UserController::class);
-Route::resource('questionnaires', QuestionnaireController::class);
+
+Route::group(['middleware' => ['admin']], function () {
+    Route::resource('users', UserController::class);
+    Route::resource('questionnaires', QuestionnaireController::class);
+});
+
 
 Route::get('/', function () {
     return view('welcome');

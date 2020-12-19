@@ -3,10 +3,21 @@
 namespace App\Http\Controllers;
 
 use App\Models\Questionnaire;
+use App\Repositories\QuestionnaireRepository;
 use Illuminate\Http\Request;
 
 class QuestionnaireController extends Controller
 {
+    /**
+     * @var QuestionnaireRepository
+     */
+    private $questionnaireRepository;
+
+    public function __construct(QuestionnaireRepository $questionnaireRepository)
+    {
+        $this->questionnaireRepository = $questionnaireRepository;
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +25,8 @@ class QuestionnaireController extends Controller
      */
     public function index()
     {
-        //
+        $questionnaires= Questionnaire::paginate(10);
+        return view('admin.questionnaires.index',compact('questionnaires'));
     }
 
     /**
@@ -46,7 +58,8 @@ class QuestionnaireController extends Controller
      */
     public function show(Questionnaire $questionnaire)
     {
-        return view('admin.questionnaires.show2',compact('questionnaire'));
+        $categoriesTree = $questionnaire->category->getParentTree();
+        return view('admin.questionnaires.show',compact('questionnaire','categoriesTree'));
     }
 
     /**
@@ -80,6 +93,8 @@ class QuestionnaireController extends Controller
      */
     public function destroy(Questionnaire $questionnaire)
     {
-        //
+        $this->questionnaireRepository->delete($questionnaire);
+
+        return back();
     }
 }

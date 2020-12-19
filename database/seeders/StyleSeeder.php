@@ -18,7 +18,7 @@ class StyleSeeder extends Seeder
     }
 
     public function seeding () {
-        $jsonString = file_get_contents("C:\\xampp\htdocs\\valeria-sys\public\categories\styles.json");
+        $jsonString = file_get_contents("C:\\xampp\htdocs\\valeria-sys\public\storage\categories\styles.json");
         $data = json_decode($jsonString, true);
         for($i=0; $i< sizeof($data);$i++) {
             $this->arrayJsonToDB($data[$i], null);

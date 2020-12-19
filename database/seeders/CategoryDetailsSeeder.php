@@ -19,7 +19,7 @@ class CategoryDetailsSeeder extends Seeder
     }
 
     public function seeding () {
-        $jsonString = file_get_contents("C:\\xampp\htdocs\\valeria-sys\public\categories\categorydetails.json");
+        $jsonString = file_get_contents("C:\\xampp\htdocs\\valeria-sys\public\storage\categories\categorydetails.json");
         $data = json_decode($jsonString, true);
         for($i=0; $i< sizeof($data);$i++) {
             $categoryDetails = new CategoryDetails($data[$i]);

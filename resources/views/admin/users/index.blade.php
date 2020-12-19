@@ -21,26 +21,40 @@
                             <tbody>
                             @foreach($users as $key => $user)
                                 <tr style="vertical-align: center">
-                                    <td>{{$user->id}}</td>
-                                    <td>{{$user->username}}</td>
-                                    <td>{{$user->email}}</td>
+                                    <td><span class="mt-2">{{$user->id}} </span> </td>
+                                    <td><span class="mt-2">{{$user->username}} </span> </td>
+                                    <td><span class="mt-2">{{$user->email}}</span></td>
                                     <td>
+                                        <span class="mt-2">
                                         @if($user->verified)
                                             Yes
                                         @else
                                             No
                                         @endif
+
+                                        </span>
                                     </td>
                                     <td class="d-flex justify-content-end">
-                                        <a href="{{route('users.edit',$user->id)}}"> <button class="btn btn-primary rounded mr-1" style="width: 4.5rem" >Edit</button> </a>
-                                        <form>
-                                            <button class="btn btn-danger rounded"style="width: 4.5rem" >Delete</button>
+                                        <a href="#"> <button class="btn btn-primary rounded mr-1" style="width: 4.5rem" >Show</button> </a>
+                                        <a href="{{route('users.edit',$user->id)}}"> <button class="btn btn-outline-info rounded mr-1" style="width: 4.5rem" >Edit</button> </a>
+                                        <form action="{{route('users.destroy',$user->id)}}" method="POST">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button class="btn btn-danger rounded"style="width: 4.5rem" onclick="return confirm('Are you sure?')">Delete</button>
                                         </form>
                                     </td>
                             </tr>
                                 @endforeach
                             </tbody>
+
+
                         </table>
+                        <div class="mt-4 text-small ">
+                            {{ $users->links() }}
+                        </div>
+
+
+
                     </div>
                 </div>
 

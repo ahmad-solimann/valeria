@@ -11,23 +11,8 @@
                         <ul aria-labelledby="notifications" class="dropdown-menu">
                             <li><a rel="nofollow" href="#" class="dropdown-item">
                                     <div class="notification d-flex justify-content-between">
-                                        <div class="notification-content"><i class="fa fa-envelope"></i>You have 6 new messages </div>
-                                        <div class="notification-time"><small>4 minutes ago</small></div>
-                                    </div></a></li>
-                            <li><a rel="nofollow" href="#" class="dropdown-item">
-                                    <div class="notification d-flex justify-content-between">
-                                        <div class="notification-content"><i class="fa fa-twitter"></i>You have 2 followers</div>
-                                        <div class="notification-time"><small>4 minutes ago</small></div>
-                                    </div></a></li>
-                            <li><a rel="nofollow" href="#" class="dropdown-item">
-                                    <div class="notification d-flex justify-content-between">
-                                        <div class="notification-content"><i class="fa fa-upload"></i>Server Rebooted</div>
-                                        <div class="notification-time"><small>4 minutes ago</small></div>
-                                    </div></a></li>
-                            <li><a rel="nofollow" href="#" class="dropdown-item">
-                                    <div class="notification d-flex justify-content-between">
-                                        <div class="notification-content"><i class="fa fa-twitter"></i>You have 2 followers</div>
-                                        <div class="notification-time"><small>10 minutes ago</small></div>
+                                        <div class="notification-content"><i class="fa fa-flag"></i> You have {{ auth()->user()->notifications->count() }} new submitted questionnaires </div>
+{{--                                        <div class="notification-time"><small>4 minutes ago</small></div>--}}
                                     </div></a></li>
                             <li><a rel="nofollow" href="#" class="dropdown-item all-notifications text-center"> <strong> <i class="fa fa-bell"></i>view all notifications                                            </strong></a></li>
                         </ul>

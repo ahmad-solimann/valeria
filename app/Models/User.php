@@ -47,4 +47,8 @@ class User extends Authenticatable
     public function notificationsCount(){
        return $this->notifications()->count();
     }
+
+    public function isAdmin(){
+        return $this->user_role == User::ADMIN_ROLE;
+    }
 }
